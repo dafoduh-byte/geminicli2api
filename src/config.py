@@ -220,7 +220,7 @@ def get_thinking_budget(model_name):
         if "flash" in base_model:
             return 24576
         elif "pro" in base_model:
-            return 45000 # Works for 2.5, 3.0, and 3.1 pro
+            return 32768 # Works for 2.5, 3.0, and 3.1 pro
     return -1  # Default for all models
 
 def should_include_thoughts(model_name):
